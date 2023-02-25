@@ -1,0 +1,18 @@
+@charset "UTF-8";
+// ------------------
+// 定義
+// ------------------
+
+// レスポンシブ
+$tab: 1050px;
+$sp: 600px;
+@mixin tab{
+  @media(max-width:($tab)){
+    @content;
+  }
+}
+@mixin sp{
+  @media(max-width:($sp)){
+    @content;
+  }
+}
