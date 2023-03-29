@@ -49,10 +49,8 @@
                       <?php endif; ?>  
                       <div class="black-shadow"></div>
                       <h3><?php the_title(); ?></h3>
+                      <p><?php the_excerpt(); ?></p>
                     </a>
-                    <h3><?php the_title(); ?></h3>
-                    <p><?php the_excerpt(); ?></p>
-                    <a class="button" href="<?php the_permalink();?>">READ MORE</a>
                   </li>
                   <?php endwhile;?>
                 </ul>
