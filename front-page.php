@@ -62,7 +62,7 @@
             <!-- 表示するページがレッスン一覧以外の場合 --> 
             <?php else:?>
             <section>
-              <!-- <h2><?php the_title(); ?></h2> -->
+              <h2><?php the_title(); ?></h2>
               <div>
                 <?php the_content();?>
               </div> 

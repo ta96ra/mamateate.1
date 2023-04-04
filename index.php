@@ -7,7 +7,7 @@
     <div class="contents">
       <div class="wrapper">
         <section id="lessons">
-          <h2>レッスン一覧</h2>
+          <h2>MENU</h2>
           <?php if(have_posts()):?>
           <ul>
             <?php while(have_posts()):?>
@@ -19,15 +19,13 @@
                 <?php endif; ?>  
                 <div class="black-shadow"></div>
                 <h3><?php the_title(); ?></h3>
+                <p><?php the_excerpt(); ?></p>
               </a>
-              <h3><?php the_title(); ?></h3>
-              <p><?php the_excerpt(); ?></p>
-              <a class="button" href="<?php the_permalink();?>">READ MORE</a>
             </li>
             <?php endwhile;?>
           </ul>
           <?php else: ?>
-            <p>レッスンはありません</p>
+            <p>MENUはありません</p>
           <?php endif; ?> 
         </section>
       </div>

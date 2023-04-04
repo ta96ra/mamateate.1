@@ -10,40 +10,29 @@
   <?php wp_body_open(); ?>
   <header>
     <div class="header-top">
-      <div class="wrapper">
-        <a href="<?php echo home_url();?>" class="logo">
-          <img src="<?php echo get_template_directory_uri().'/img/logo1.png';?>" alt="">
-        </a>
-        <!-- <nav>
-          <ul>
-            <li><a href="#">ホーム</a></li>
-            <li><a href="#">レッスン</a></li>
-            <li><a href="#">スタジオ</a></li>
-            <li><a href="#">ご予約</a></li>
-          </ul>
-        </nav> -->
-        <?php if (has_nav_menu('global')):?>
-          <?php wp_nav_menu(array(
-            'theme_location' => 'global',
-            'menu_id' => 'global-menu',
-            'container' => 'nav',
-            'container_class' => 'global-menu',
-          ))?>
-        <?php endif; ?>
+      <div class="header-left">
+      </div> 
+      <div class="header-right">
+        <a href="<?php echo get_template_directory_uri().'/reserve';?>">ご予約お問い合わせはこちらから</a>
         <div id="hamburger">
           <span></span>
           <span></span>
-          <span></span>
+          <p>MENU</p>
         </div>
+      </div> 
+    </div>
+    <div id="modal-window">
+      <div class="black-window"></div>
+      <div class="white-window">
+        <?php if (has_nav_menu('hamburger')):?>
+          <?php wp_nav_menu(array(
+            'theme_location' => 'hamburger',
+            'menu_id' => 'hamburger-menu',
+            'container' => 'nav',
+            'container_class' => 'hamburger-menu',
+          ))?>
+        <?php endif; ?>
       </div>
     </div>
-    <?php if (has_nav_menu('hamburger')):?>
-      <?php wp_nav_menu(array(
-        'theme_location' => 'hamburger',
-        'menu_id' => 'hamburger-menu',
-        'container' => 'nav',
-        'container_class' => 'hamburger-menu',
-      ))?>
-    <?php endif; ?>
   </header>
   <div id="index"></div>

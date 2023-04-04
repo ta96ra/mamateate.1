@@ -32,3 +32,7 @@
   <?php wp_footer(); ?>
 </body>
 </html>
+<script>
+  
+  
+</script>

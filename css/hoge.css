@@ -1,1 +1,138 @@
-/* No CSS *//*# sourceMappingURL=hoge.css.map */
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  position: relative;
+  height: 65px;
+}
+
+header .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+header .header-top .header-left {
+  width: 50%;
+}
+
+header .header-top .header-right {
+  position: relative;
+  width: 50%;
+  background: #f0f5ea;
+}
+
+header .header-top .header-right a {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  color: #d4ab37;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+header .header-top .header-right #hamburger {
+  position: fixed;
+  top: 17.5px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+header .header-top .header-right #hamburger span {
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: #d4ab37;
+}
+
+header .header-top .header-right #hamburger span:nth-of-type(1) {
+  top: 0;
+}
+
+header .header-top .header-right #hamburger span:nth-of-type(2) {
+  top: 15px;
+}
+
+header .header-top .header-right #hamburger p {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  font-size: .75rem;
+  color: #d4ab37;
+}
+
+header #modal-window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  z-index: 10;
+  pointer-events: none;
+  outline: 4px solid green;
+}
+
+header #modal-window .black-window {
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+header #modal-window .white-window {
+  position: relative;
+  width: 50vw;
+  height: 100%;
+  background: #fff;
+  outline: 2px solid red;
+}
+
+header #modal-window .white-window .hamburger-menu {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  height: 400px;
+  outline: 2px solid brown;
+}
+
+header #modal-window .white-window .hamburger-menu #hamburger-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+  width: 100%;
+  height: 100%;
+  outline: 4px solid green;
+}
+
+header #modal-window .white-window .hamburger-menu #hamburger-menu .menu-item {
+  display: block;
+  width: 50%;
+  outline: 2px solid blue;
+}
+
+header #modal-window .white-window .hamburger-menu #hamburger-menu .menu-item a {
+  color: #588a63;
+}
+
+header #modal-window.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+/*# sourceMappingURL=hoge.css.map */

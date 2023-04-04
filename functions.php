@@ -18,9 +18,6 @@ function mamateate1_setup(){
   add_image_size('mamateate1-thumbnail',290,290,true);  //レッスン一覧のサムネイルサイズ
   add_image_size('mamateate1-hero',1200,600,true);   //レッスンのメインビジュアルサイズ
   register_nav_menus(array(
-    'global' => 'Global Menu',  //「Global Menu」というナビゲーションの設定
-  ));
-  register_nav_menus(array(
     'hamburger' => 'Hamburger Menu',  //「Hamburger Menu」というナビゲーションの設定
   ));
   register_nav_menus(array(
