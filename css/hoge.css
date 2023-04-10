@@ -210,6 +210,88 @@ header #modal-window.show .white-window .reserve, header #modal-window.show .whi
   opacity: 1;
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto 100px;
+}
+
+.wrapper #lessons {
+  outline: 2px solid red;
+}
+
+.wrapper #lessons h2 {
+  font-size: 2rem;
+  color: #588a63;
+}
+
+.wrapper #lessons .menu {
+  color: #588a63;
+}
+
+.wrapper #lessons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 40px;
+}
+
+@media (max-width: 1050px) {
+  .wrapper #lessons ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper #lessons ul {
+    padding: 10px;
+  }
+}
+
+.wrapper #lessons ul li {
+  width: 450px;
+  margin: 20px;
+  border: 1px solid #588a63;
+}
+
+.wrapper #lessons ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper #lessons ul li a img {
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (max-width: 600px) {
+  .wrapper #lessons ul li a img {
+    width: 35%;
+  }
+}
+
+.wrapper #lessons ul li a .lesson-text h3 {
+  text-align: center;
+}
+
+.wrapper #lessons ul li:nth-of-type(2) a img {
+  -o-object-position: left;
+     object-position: left;
+}
+
+.wrapper #lessons ul li:nth-of-type(4) a img {
+  -o-object-position: 85%;
+     object-position: 85%;
+}
+
 footer .sns ul li {
   position: fixed;
   display: -webkit-box;

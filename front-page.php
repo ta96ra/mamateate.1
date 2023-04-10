@@ -28,9 +28,9 @@
             ));
             ?>
             <div class="wrapper">
-              <section id="lessons">  
+              <section id="lessons"> 
                 <h2><?php the_title(); ?></h2>
-                
+                <p class="menu">メニュー</p>
                 <?php if($blog_posts->have_posts()):?>
                 <ul>
                   <?php while($blog_posts->have_posts()):?>
@@ -39,10 +39,11 @@
                     <a class="image-button" href="<?php the_permalink();?>">
                       <?php if(has_post_thumbnail()):?>
                         <?php the_post_thumbnail('mamateate1-thumbnail');?>
-                      <?php endif; ?>  
-                      <div class="black-shadow"></div>
-                      <h3><?php the_title(); ?></h3>
-                      <p><?php the_excerpt(); ?></p>
+                      <?php endif; ?>
+                      <div class="lesson-text">
+                        <h3><?php the_title(); ?></h3>
+                        <p><?php the_excerpt(); ?></p>
+                      </div>
                     </a>
                   </li>
                   <?php endwhile;?>

@@ -217,6 +217,71 @@ header{
     }
   }
 }
+// -----------------
+// メニュー
+// -----------------
+.wrapper{
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto 100px;
+  #lessons{
+    outline: 2px solid red;
+    h2{
+      font-size: 2rem;
+      color: $green;
+    }
+    .menu{
+      color: $green;
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      @include tab{
+        justify-content: center;
+      }
+      @include sp{
+        padding: 10px;
+      }
+      li{
+        width: 450px;
+        margin: 20px;
+        border: 1px solid $green;
+        a{
+          display: flex;
+          img{
+            width: 200px;
+            object-fit: cover;
+            object-position: center;
+            @include sp{
+              width: 35%;
+            }
+          }
+          .lesson-text{
+            h3{
+              text-align: center;
+            }
+          }
+        }
+      }
+      li:nth-of-type(2){
+        a{
+          img{
+            object-position: left;
+          }
+        }
+      }
+      li:nth-of-type(4){
+        a{
+          img{
+            object-position: 85%;
+          }
+        }
+      }
+    }
+  }
+}
+
 // ----------------
 // フッター
 // ----------------
